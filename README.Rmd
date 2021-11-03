@@ -23,6 +23,9 @@ version <- read.dcf(file = "DESCRIPTION", fields = "Version")
 Note that `R-CMD-check` succeeds on my Windows machine but fails on GitHub Actions
 (see [issue #30](https://github.com/grinnellm/SpawnIndex/issues/30)).
 
+Andy adding dummy comment to see if I can push (don't think I can because there
+ar GitHub Actions here and I don't have the PAT stuff set up properly yet).
+
 ## Description
 
 `r read.dcf(file = "DESCRIPTION", fields = "Description")`
@@ -53,7 +56,7 @@ First, load the SpawnIndex package in the usual way.
 library(SpawnIndex)
 ```
 
-Next, load the default parameter values for spawn index calculations, 
+Next, load the default parameter values for spawn index calculations,
 and calculate the conversion factor for the number of Pacific Herring eggs
 to the spawn index (i.e., biomass in tonnes, t).
 Call the function with the default parameters.
@@ -88,7 +91,7 @@ eggs <- egg_density * length * width
 eggs
 ```
 
-An area measuring `r length`\ m in length and `r width`\ m in width, 
+An area measuring `r length`\ m in length and `r width`\ m in width,
 covered with `r layers` layers of eggs,
 has an estimated `r format(eggs, big.mark=",", scientific = FALSE)` 10^3^\ eggs.
 Like egg density above, number of eggs is in 10^3^\ eggs.
